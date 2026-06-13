@@ -1,0 +1,45 @@
+<div class="row">
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <p class="tag-grey-text d-none d-sm-block">FILTER BY</p>
+        <div class="clearfix">
+            <img src="../Images/filterIcon.png" width="20" height="20" alt="" class="float-right margin-bottom10 d-block d-sm-none" id="filterIconID">
+        </div>
+        <div id="filterBlock" class="d-none d-sm-block">
+            <div class="btn-group custom-dropdown">
+                <button type="button" class="btn btn-secondary">Collection</button>
+                <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" id="dropdownMenuCollectionButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
+                    <span class="sr-only">Collection Dropdown</span>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuCollectionButton">
+                  <a class="dropdown-item">Collection</a>
+                </div>
+            </div>
+            <div class="btn-group custom-dropdown">
+                <button type="button" class="btn btn-secondary">Color</button>
+                <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" id="dropdownMenuColorButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
+                    <span class="sr-only">Color Dropdown</span>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuColorButton">
+                  <a class="dropdown-item">Red</a>
+                </div>
+            </div>
+            <div class="btn-group custom-dropdown">
+                <button type="button" class="btn btn-secondary">Category</button>
+                <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" id="dropdownMenuCategoryButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
+                    <span class="sr-only">Category Dropdown</span>
+                </button>
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuCategoryButton">
+                  <a class="dropdown-item">Category</a>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-8 col-lg-9">
+        <div id="allProducts" class="row"></div>
+        <p id="serviceCallHomeMessage"></p>
+    </div>
+</div>
+
