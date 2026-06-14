@@ -1,70 +1,72 @@
 <!doctype html>
 <html>
 
-  <head>
-    <meta charset="utf-8">
-    <title>Deloitte POC</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <meta charset="utf-8">
+  <title>Deloitte POC</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="styles.css">
-  </head>
+  <!-- <link rel="stylesheet" href="styles.css"> -->
+  <link rel="stylesheet" href="styles.scss">
+</head>
 
-  <body>
-    <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="javascript:void(0)" onclick="changeLink('home')">
-          <img src="./assets/Images/hamburgerIcon.jpeg" width="30" height="30" alt="" loading="lazy">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse clearfix" id="navbarSupportedContent">
-          <div class="d-inline-block half-width float-left">
-            <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link" href="javascript:void(0)" onclick="changeLink('home')">HOME</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link"  href="javascript:void(0)" onclick="changeLink('shop')">SHOP</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="javascript:void(0)"  onclick="changeLink('magazine')">MAGAZINE</a>
-              </li>
-            </ul>
-          </div>
-          
-          <div class="d-inlin-block half-width float-right text-right">
-            <ul class="navbar-nav float-right">
-              <li class="nav-item">
-                <a class="nav-link" href="javascript:void(0)">
-                  <img src="./assets/Images/searchIcon.png" width="20" height="20" alt="" loading="lazy">
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link"  href="javascript:void(0)">
-                  <img src="./assets/Images/cartIcon.png" width="20" height="20" alt="" loading="lazy">
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="javascript:void(0)">LOGIN</a>
-              </li>
-            </ul>
-          </div>
+<body>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="javascript:void(0)" onclick="changeLink('home')">
+        <img src="./assets/Images/hamburgerIcon.jpeg" width="30" height="30" alt="" loading="lazy">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse clearfix" id="navbarSupportedContent">
+        <div class="d-inline-block half-width float-left">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="javascript:void(0)" onclick="changeLink('home')">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:void(0)" onclick="changeLink('shop')">SHOP</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:void(0)" onclick="changeLink('magazine')">MAGAZINE</a>
+            </li>
+          </ul>
         </div>
-      </nav>
 
-      <div id="loader" class="d-none">
-        <img src="./assets/Images/loader.gif">
+        <div class="d-inlin-block half-width float-right text-right">
+          <ul class="navbar-nav float-right">
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:void(0)">
+                <img src="./assets/Images/searchIcon.png" width="20" height="20" alt="" loading="lazy">
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:void(0)">
+                <img src="./assets/Images/cartIcon.png" width="20" height="20" alt="" loading="lazy">
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:void(0)">LOGIN</a>
+            </li>
+          </ul>
+        </div>
       </div>
+    </nav>
 
-      <div id="loadTemplate"></div>
-      <div id="mainFailure"></div>
+    <div id="loader" class="d-none">
+      <img src="./assets/Images/loader.gif">
     </div>
-    <script src="assets/Scripts/homepage.js"></script>
-    <script src="assets/Scripts/detailedItem.js"></script>
-    <script src="main.js"></script>
-  </body>
+
+    <div id="loadTemplate"></div>
+    <div id="mainFailure"></div>
+  </div>
+  <script type="module" src="assets/Scripts/homepage.js"></script>
+  <script type="module" src="assets/Scripts/detailedItem.js"></script>
+  <script type="module" src="main.js"></script>
+</body>
 
 </html>

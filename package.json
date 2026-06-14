@@ -7,28 +7,35 @@
   "author": "",
   "scripts": {
     "start": "npm run build-css && parcel build *.html assets/Templates/*.html && parcel index.html --open",
-    "build-css": "node-sass --include-path scss styles.scss styles.css"
+    "build-css": "sass --load-path scss styles.scss styles.css",
+    "predeploy": "parcel build index.html --public-url /deloittePOC/",
+    "deploy": "gh-pages -d dist"
   },
-  "staticFiles": {
-    "staticPath": [
-      {
-        "staticPath": "products.json",
-        "staticOutDir": ""
-      },
-      {
-        "staticPath": "productDetails.json",
-        "staticOutDir": ""
-      },
-      {
-        "staticPath": "assets/Images/Items",
-        "staticOutDir": "Images/Items"
-      }
-    ]
-  },
+  "staticFiles": [
+    {
+      "staticPath": "products.json",
+      "staticOutPath": ""
+    },
+    {
+      "staticPath": "productDetails.json",
+      "staticOutPath": ""
+    },
+    {
+      "staticPath": "assets/Images",
+      "staticOutPath": "assets/Images"
+    },
+    {
+      "staticPath": "assets/Templates",
+      "staticOutPath": "assets/Templates"
+    }
+  ],
   "devDependencies": {
-    "node-sass": "^4.14.1",
+    "@parcel/transformer-sass": "^2.16.4",
+    "gh-pages": "^6.3.0",
     "nodemon": "^2.0.4",
-    "parcel-bundler": "^1.12.4"
+    "parcel": "^2.16.4",
+    "parcel-reporter-static-files-copy": "^1.5.3",
+    "sass": "^1.100.0"
   },
   "dependencies": {
     "bootstrap": "^4.5.2",
